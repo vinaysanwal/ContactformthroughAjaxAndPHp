@@ -10,7 +10,6 @@ $comments = $conn->real_escape_string($_POST['comments']);
 
 $sql="INSERT INTO contact (name, email, phone, comments) VALUES ('".$Name."','".$Email."', '".$Phone."', '".$comments."')";
 
-
 if(!$result = $conn->query($sql)){
 die('There was an error running the query [' . $conn->error . ']');
 }
